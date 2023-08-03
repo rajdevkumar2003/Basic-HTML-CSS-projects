@@ -1,0 +1,329 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    
+
+}
+.bg {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    background-image: url(bg.avif);
+
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+    position: fixed;
+    opacity: 10;
+}
+
+.header{
+    background-color: rgb(208, 239, 72);
+    padding-top: 0,5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    justify-items: center;
+    border-bottom: whitesmoke solid 3px;
+}
+.header .name h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.header .name h2 span{
+    color: rgb(44, 9, 9);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-shadow: 5px 5px 10px rgb(165, 154, 37);
+}
+.header .nav1{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    justify-items: center;
+    margin-right: 1rem;
+}
+.home-nav1{
+    background-color: black;
+    color: white;
+   
+}
+
+.nav1 li {
+    margin-left: 3.2rem;
+    margin-top: 1.6rem;
+    list-style-type: none;
+}
+.nav1 li a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: solid rgb(16, 16, 16) 2px;
+    border-radius: 23px;
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: black;
+    box-shadow: 5px 5px 10px rgb(165, 154, 37);
+
+}
+.navbar{
+    padding: 0%;
+    border: 0%;
+    
+    margin: 0%;
+    border-bottom: #fff solid 6px;
+    
+    background-color: rgb(0, 0, 0);
+    
+}
+.navbar ul{
+    display: flex;
+    padding: 0%;
+    border: 0%;
+    padding-bottom: 3px;
+    
+    margin: 0%; 
+    flex-wrap: wrap;
+justify-content: center;
+
+
+}
+.navbar ul li{
+    list-style-type: none;
+    margin-right: 4em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid;
+transition: 0.3s;
+
+
+}
+.navbar ul li:hover{
+    border-bottom: white 3px solid;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 650px;
+    width: 1200px;
+    right: 10%;
+    position: absolute;
+    
+
+}
+@-webkit-keyframes slide-animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+.slider-images{
+    height: 650px;
+    width: 3600px;
+    margin: 0 0 0 -2400px;
+    left: 160px;
+    overflow: hidden;
+    position: relative;
+    -webkit-animation-name: slide-animation;
+
+    -webkit-animation-duration: 18s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction: alternate;
+    
+}
+.img1{
+    height: 650px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+.cardbox{
+    position: absolute;
+    width: 100vh;
+    
+    top: 118%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 166px;
+    margin-right: 162px;
+    padding-left: 20%;
+    padding-right: 11.18rem;
+    background:linear-gradient(rgb(235, 156, 59) , rgb(236, 244, 80) );
+    
+   
+
+    
+}
+.cardbox ul {
+    padding-right: 6%
+}
+.cardbox ul li{
+    list-style-type: none;
+    padding-bottom: 5%;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: rgb(0, 0, 0) ;
+    box-shadow: 10px 15px 45px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border: black solid 2px;
+    
+}
+.card:hover{
+    width: 600px;
+}
+.card .imgBx{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card .imgBx img{
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .imgBx img{
+    transform: rotate(-35deg) translateX(-20px);
+}
+.card .details{
+    margin-top: 10px;
+position: relative;
+display: flex;
+min-width: 300px;
+height: 100%;
+background-color: black;
+justify-content: center;
+text-align: center;
+padding: 20px;
+text-transform: uppercase;
+flex-direction: column;
+
+
+
+}
+.card .details h3{
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    border: white solid 3px;
+    border-radius: 12px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    transition: 0.2s;
+}
+.card .details h3:hover{
+    background-color: #fff;
+    color: black;
+    border-style: double;
+    border: black;
+}
+footer{
+    position: absolute;
+    top: 67%;
+    position: fixed;
+}
+
+footer ul li{
+    list-style-type: none;
+    
+}
+
+footer ul li a img{
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+footer ul li a img:hover{
+  color: whitesmoke;
+  border-radius: 100%;
+  transition: 0.3s;
+  height: 40px;
+  
+}
+
+
+.about{
+    position: absolute;
+    top: 316.47%;
+    background-color: black;
+    color: #fff;
+    width: 59.35%;
+    margin-left: 10.9%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 2rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.about h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align:center;
+    text-transform: uppercase;
+    color: rgb(160, 155, 155);
+    padding-left: 15%;
+}
+.about h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: grey;
+    text-align: left; 
+    text-transform: capitalize;
+    margin-left: 25%;
+    border: #fff solid 2px;
+    border-radius: 18px;
+    width: 50%;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+

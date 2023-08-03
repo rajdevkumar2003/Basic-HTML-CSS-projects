@@ -1,0 +1,171 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(202, 64, 64),rgb(202, 64, 64) 50%,
+ #fff 50%, #fff 100%);
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: rgb(202, 64, 64);
+    box-shadow: 10px 15px 45px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    
+}
+.card:hover{
+    width: 600px;
+}
+.card .imgBx{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card .imgBx img{
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+}
+.card:hover .imgBx img{
+    transform: rotate(-35deg) translateX(-20px);
+}
+.card .details{
+    margin-top: 10px;
+position: relative;
+display: flex;
+min-width: 300px;
+height: 100%;
+background: rgb(202, 64, 64);
+justify-content: center;
+text-align: center;
+padding: 20px;
+text-transform: uppercase;
+flex-direction: column;
+
+
+
+}
+/*.card:hover .details{
+    left: 300px;
+}*/
+.card .details::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+.details h3{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+}
+.details h3:hover{
+    color: #fff;
+}
+span{
+    padding: 10px;
+    padding-left: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    opacity: .6;
+    
+}
+span:hover{
+    opacity: 2;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    opacity: 1.1;
+    padding: 10px;
+    padding-left: 0px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+p{
+    font-size: smaller;
+    opacity: 0.9;
+    color: #fff;
+
+}
+ul{
+    display: flex;
+    margin-left: -18px;
+    margin-top: 13px;
+
+}
+ul li{
+    list-style-type: none;
+    font-size: large;
+    justify-content: space-between;
+    padding: 10px 17px;
+    border: #fff solid ;
+    color: #fff;
+    
+}
+li:hover{
+    border-color: black;
+    color: #000;
+    background-color: #fff;
+}
+.buy{
+    display: flex;
+    padding: 30px;
+justify-content: space-between;
+margin-top: 20px;
+
+
+}
+h2{
+    display: flex;
+    margin-left: -20px;
+    padding-right: 20px;
+
+}
+sup{
+    font-size: 15px;
+
+}
+small{
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.buy a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #fff;
+border: black solid;
+padding: 3px 6px;
+}
+h2,small,sup:hover{
+    color: #fff;
+}
+.buy a:hover{
+    border-color: white;
+    background-color: #000;
+}

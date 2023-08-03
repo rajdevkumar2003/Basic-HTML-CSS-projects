@@ -1,0 +1,230 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+    position: relative;
+}
+.nav {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    width: 84%;
+    height: 45px;
+    background-color: #2874f0;
+    padding-left: 16%;
+    padding-top: 15px;
+}
+.nav .div img {
+    padding-top: 7px;
+}
+.nav .div h5 {
+    height: 15px;
+    width: 75px;
+    font-size: 9px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+}
+
+.nav input {
+    height: 36px;
+    width: 420px;
+    margin-left: 9px;
+}
+.nav ::placeholder {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    padding-top: 7.4px;
+    padding-left: 140px;
+}
+.nav ul li {
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 540;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav ul li span {
+    background-color: white;
+    color: #2874f0;
+    padding: 10px 15px;
+}
+.nav div h5 {
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.nav div h5 span {
+    color: #ceb946;
+    font-weight: 500;
+    padding: 2px;
+    font-size: 1px;
+
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+.types {
+    width: 100%;
+    margin-top: 57px;
+    position: absolute;
+}
+.types ul {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    padding-left: 55px;
+}
+.types ul li {
+    padding-right: 80px;
+    list-style-type: none;
+}
+.types ul li img {
+    height: 64px;
+    width: 64px;
+}
+.types ul li a {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.realme {
+    position: absolute;
+    margin-top: 13%;
+    background-color: rgb(211, 207, 202);
+    padding: 4px;
+    padding-bottom: 4px;
+    border: solid gray 0.1px;
+
+    left: 0%;
+
+    top: 0%;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    border-bottom: solid.1px grey;
+}
+.imalia{
+    padding: 5px;
+    background-color: rgb(202, 197, 197);
+    justify-content: center;
+}
+.items .left .head {
+    display: flex;
+    width: 1240px;
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: solid 0.1px grey;
+}
+.head h3 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.head a {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #2874f0;
+    border-radius: 2px;
+    padding: 7px 9px;
+    padding-top: 10px;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border: solid 0.1px grey;
+}
+.tt img{
+    height: 150px;
+    width: 150px;
+}
+.items .left .tt {
+    display: flex;
+    padding: 15px 20px;
+    height: 63;
+    width: 1004;
+    justify-content: space-evenly;
+}
+.items .left .tt li{
+    list-style-type: none;
+    padding: 3px;
+}
+.items .left .tt li a{
+    
+    text-decoration: none;
+}
+.items .left .tt li a ul li {
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+.items .left .tt li a ul li h3{
+    text-transform: uppercase;
+    color: black;
+    font-weight: 550;
+    font-size: 13px;
+}
+.items2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53%;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    border-bottom: solid.1px grey;
+}
+.footer{
+    background-color: #172337;
+    margin-top: 104.5%;
+    position: absolute;
+    border-top: solid grey 6px;
+    color: white;
+    padding: 10px;
+    
+}
+.footer .up{
+    display: flex;
+}
+.footer .up .left{
+    display: flex;
+}
+.footer .up .left ul{
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-right: 60px;
+    
+}
+.footer .up .right{
+    display: flex;
+}
